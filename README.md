@@ -2,7 +2,7 @@
 
 
 #CRUD de usuários
-API REST para cadastro de usuários usando spring boot
+**API REST para cadastro de usuários usando spring boot
 
 #Crie um banco de dados com o nome "Develcode"
 
