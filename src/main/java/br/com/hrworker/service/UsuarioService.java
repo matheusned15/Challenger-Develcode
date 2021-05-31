@@ -3,7 +3,6 @@ package br.com.hrworker.service;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.BeanUtils;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -40,13 +39,6 @@ public class UsuarioService {
 	}
 
 	public ResponseEntity<Usuario> atualizaUsuario(Long codigo, Usuario usuario) {
-//		Optional<Usuario> buscaUsuario = repository.findById(codigo);
-//		if (buscaUsuario.isPresent()) {
-//			BeanUtils.copyProperties(usuario, buscaUsuario.get(), "codigo");
-//			Usuario salvaUsuario = repository.save(buscaUsuario.get());
-//			
-
-//			return ResponseEntity.ok(salvaUsuario);
 		Usuario usuarioToSalve = repository.findById(codigo)
 				.orElseThrow(() -> new NullPointerException("Usuario não encontrado" + codigo));
 

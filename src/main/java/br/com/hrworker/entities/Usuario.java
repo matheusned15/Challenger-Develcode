@@ -1,10 +1,6 @@
 package br.com.hrworker.entities;
 
-import java.time.LocalDate;
-
 import javax.persistence.Entity;
-
-import org.springframework.format.annotation.DateTimeFormat;
 
 import com.sun.istack.NotNull;
 
@@ -18,23 +14,16 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class Usuario extends BaseEntity{
-	
-	
+public class Usuario extends BaseEntity {
+
 	private static final long serialVersionUID = 1L;
-	
-	@NotNull
-	private String codigo;
-	
+
 	@NotNull
 	private String nome;
-	
-//	@NotNull
-//	private String dataDeNascimento;
-	
-//	@DateTimeFormat(pattern = "dd/MM/yyyy")
+
+	@NotNull
 	private String dataNascimento;
-	
+
 	private String image;
-	
+
 }
