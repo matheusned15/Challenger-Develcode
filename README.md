@@ -21,8 +21,8 @@
 Importe o projeto como Maven Project em sua IDE de preferência e edite no arquivo **application.properties** os dados necessários para realizar a conexão com o Postgree
 
 > spring.datasource.url=jdbc:postgresql//localhost:5432/Develcode <br>
-spring.datasource.username=**INSIRA SEU USUARIO DO MYSQL** <br>
-spring.datasource.password=**INSIRA SUA SENHA DO MYSQL** <br>
+spring.datasource.username=**INSIRA SEU USUARIO DO Postgree** <br>
+spring.datasource.password=**INSIRA SUA SENHA DO Postgree** <br>
 
 Feito as configurações necessárias execute o projeto e acesse a seguinte url:
 > http://localhost:8080/swagger-ui.html#/
